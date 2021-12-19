@@ -18,20 +18,27 @@ class Solution(object):
         #         temp+=" "
         #     temp+=s[i]
         # return temp
-        counter = 0
-        for i in range(len(spaces)):
-            if i<len(s)+counter:
-                s = s[:spaces[i]+counter]+" "+s[spaces[i]+counter:]
-                counter +=1
-        return s
+        
+        # counter = 0
+        # for i in range(len(spaces)):
+        #     if i<len(s)+counter:
+        #         s = s[:spaces[i]+counter]+" "+s[spaces[i]+counter:]
+        #         counter +=1
+        # return s
+        temp = []
+        s1 = set(spaces)
+        for i,k in enumerate(s):
+            if i in s1:
+                temp.append(" ")
+            temp.append(k)
+        return "".join(temp) # return string concatenation of strings in iterable
 
         
 if __name__ == "__main__":
     
     s= "LeetcodeHelpsMeLearn"
     spaces = [8,13,15,24]
-    # print(spaces+1)
     print(Solution().addSpaces(s, spaces))
-    # final.head = Solution1().deleteDuplicates(l1.head)
-    # final.printlist()       
+    # print(set(spaces))
+     
 
