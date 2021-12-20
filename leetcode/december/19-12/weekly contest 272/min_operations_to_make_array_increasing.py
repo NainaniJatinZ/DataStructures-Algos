@@ -21,3 +21,13 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
+        
+        
+if __name__ == "__main__":
+    
+    prices =[4,1,5,2,6,2]
+    k = 3
+    for x, y in zip(prices, prices[k:]):
+        print(x,y)
+    
+        
