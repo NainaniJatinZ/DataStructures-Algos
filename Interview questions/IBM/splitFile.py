@@ -1,6 +1,16 @@
 
-#It was freaking 2 pages worth of confusingly worded information about the question
+# It was freaking 2 pages worth of confusingly worded information about the question
+# Question: split the information provided and "load" them into files with names --> file'date here'.text
+# data was provided in the following format 
+# 6
+# "H"
+# "aaaa10/20/1020"
+# "T"
+# "H"
+# "bb15/02/1930"
+# "T" 
 
+# I think the biggest factor here was me getting lost in information. Next time I'll try and decode the question with its input and output ASAP
 class Solution(object):
     def splitFile(self, fileData):
         if len(fileData)<3:
