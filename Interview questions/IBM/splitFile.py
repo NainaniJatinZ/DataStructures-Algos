@@ -9,6 +9,7 @@
 # "H"
 # "bb15/02/1930"
 # "T" 
+# Actual data is stored in the 2nd and 5th rows in the above example. last 10 bits of these data is the date. And they are prefixed by "H" header above and "T" trailer below 
 
 # I think the biggest factor here was me getting lost in information. Next time I'll try and decode the question with its input and output ASAP
 class Solution(object):
